@@ -1,0 +1,45 @@
+{
+  "score_threshold_cases": [
+    {
+      "id": "strong-agentic-match",
+      "resume_text": "Agentic AI Engineer. Built LangGraph multi-agent systems with FastAPI, PostgreSQL, and Docker. RAG, LLMs, Python, E2B sandboxed execution.",
+      "job_description": "Hiring an Agentic AI Engineer with strong Python, LangGraph multi-agent experience, RAG pipelines, FastAPI backends, Docker deployment. PostgreSQL a plus.",
+      "min_score": 55,
+      "must_include_matched": ["python", "langgraph", "fastapi", "docker"]
+    },
+    {
+      "id": "unrelated-role-low-match",
+      "resume_text": "Marketing coordinator. Managed social campaigns, newsletters, event coordination, engagement tracking in spreadsheets.",
+      "job_description": "Hiring an Agentic AI Engineer with strong Python, LangGraph multi-agent experience, RAG pipelines, FastAPI backends, Docker deployment.",
+      "max_score": 20
+    },
+    {
+      "id": "partial-match-mid-range",
+      "resume_text": "Backend engineer with Python and PostgreSQL experience. Built REST APIs and Docker deployments. No AI/ML background.",
+      "job_description": "Hiring an Agentic AI Engineer with strong Python, LangGraph multi-agent experience, RAG pipelines, FastAPI backends, Docker deployment.",
+      "min_score": 15,
+      "max_score": 55
+    },
+    {
+      "id": "empty_job_description_is_zero",
+      "resume_text": "Python, LangGraph, FastAPI experience.",
+      "job_description": "",
+      "min_score": 0,
+      "max_score": 0
+    }
+  ],
+  "relative_ranking_cases": [
+    {
+      "id": "stronger-resume-outranks-weaker",
+      "job_description": "Hiring an Agentic AI Engineer with strong Python, LangGraph multi-agent experience, RAG pipelines, FastAPI backends, Docker deployment.",
+      "higher_resume": "Agentic AI Engineer. LangGraph, RAG, FastAPI, Docker, Python, PostgreSQL, E2B sandboxes.",
+      "lower_resume": "Frontend engineer. HTML, CSS, JavaScript, Figma, responsive design."
+    },
+    {
+      "id": "ml-visual-inspection-resume-vs-generic",
+      "job_description": "Looking for a Computer Vision / ML engineer, TensorFlow, Keras, CNN model training, TFLite deployment, FastAPI.",
+      "higher_resume": "Trained CNN defect-detection models in TensorFlow and Keras, compressed to TFLite, exposed via FastAPI REST endpoint.",
+      "lower_resume": "Project manager with Scrum certification, stakeholder communication, and budgeting experience."
+    }
+  ]
+}
